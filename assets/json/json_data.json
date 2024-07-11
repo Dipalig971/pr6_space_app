@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Sun",
+    "description": "The Sun is the star at the center of the Solar System. It is a nearly perfect sphere of hot plasma, with internal convective motion that generates a magnetic field via a dynamo process. The Sun is by far the most important source of energy for life on Earth.",
+    "image": "assets/image/sun.png"
+  },
+  {
+    "name": "Mercury",
+    "description": "Mercury is the smallest planet in our solar system. It's just a little bigger than Earth's Moon. Mercury is the closest planet to the Sun, and it’s also the fastest, zipping around the Sun every 88 Earth days. Mercury's days are long; it takes 59 Earth days for Mercury to complete one full rotation, making its day nearly as long as its year.",
+    "image": "assets/image/mercury.png"
+  },
+  {
+    "name": "Venus",
+    "description": "Venus spins slowly in the opposite direction from most planets. Its thick atmosphere traps heat in a runaway greenhouse effect, making it the hottest planet in our solar system. Venus' surface temperatures are hot enough to melt lead. Venus is similar in size to Earth and is often referred to as Earth's twin.",
+    "image": "assets/image/venus.png"
+  },
+  {
+    "name": "Earth",
+    "description": "Earth is the third planet from the Sun and the only astronomical object known to harbor life. Earth's atmosphere is 78% nitrogen, 21% oxygen, with traces of water vapor, carbon dioxide, and other gases. Earth's biosphere has significantly altered the atmosphere and other abiotic conditions on the planet.",
+    "image": "assets/image/earth.png"
+  },
+  {
+    "name": "Moon",
+    "description": "The Moon is Earth's only natural satellite. It is the fifth-largest satellite in the Solar System and the largest and most massive relative to its parent planet. The Moon's gravitational influence is the main driver of Earth's tides and very slowly lengthens Earth's day.",
+    "image": "assets/image/moon.png"
+  },
+  {
+    "name": "Mars",
+    "description": "Mars is a dusty, cold, desert world with a very thin atmosphere. It is home to the tallest mountain in the solar system, Olympus Mons, a shield volcano, and Valles Marineris, the largest canyon. Mars has seasons, polar ice caps, volcanoes, canyons, and weather, and there are signs of ancient floods and evidence of liquid salty water on the planet's surface.",
+    "image": "assets/image/mars.png"
+  },
+  {
+    "name": "Jupiter",
+    "description": "Jupiter is more than twice as massive than the other planets of our solar system combined. The giant planet's Great Red Spot is a centuries-old storm bigger than Earth. Jupiter has a strong magnetic field and dozens of moons, including the four large Galilean moons: Io, Europa, Ganymede, and Callisto.",
+    "image": "assets/image/jupiter.png"
+  },
+  {
+    "name": "Saturn",
+    "description": "Adorned with a dazzling, complex system of icy rings, Saturn is unique in our solar system. The rings are made of chunks of ice and rock, and scientists are not yet certain how they formed. Saturn has more than 80 moons, and it is home to some of the most interesting landscapes in the solar system.",
+    "image": "assets/image/saturn.png"
+  },
+  {
+    "name": "Uranus",
+    "description": "Uranus is the seventh planet from the Sun, and has the third-largest planetary radius and fourth-largest planetary mass in the Solar System. Uranus is unique in that it rotates on its side, making its equator nearly perpendicular to its orbit. It is also known for its faint ring system and 27 known moons.",
+    "image": "assets/image/uranus.png"
+  },
+  {
+    "name": "Neptune",
+    "description": "Neptune is dark, cold, and whipped by supersonic winds. It was the first planet located through mathematical calculations, rather than by telescope. Neptune is known for its striking blue color, which is a result of methane in the atmosphere. It has six known rings and 14 known moons.",
+    "image": "assets/image/neptune.png"
+  }
+]
