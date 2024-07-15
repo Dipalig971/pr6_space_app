@@ -1,52 +1,123 @@
 [
   {
+    "id": "1",
     "name": "Sun",
-    "description": "The Sun is the star at the center of the Solar System. It is a nearly perfect sphere of hot plasma, with internal convective motion that generates a magnetic field via a dynamo process. The Sun is by far the most important source of energy for life on Earth.",
-    "image": "assets/image/sun.png"
+    "leanthOfYear": "230 million years",
+    "temperature": "6000",
+    "gravity": "274 m/s²",
+    "velocity": "220 km/s",
+    "distance": "0 million Km",
+    "description": "The Sun is a massive, glowing sphere of hot gases, primarily hydrogen and helium, located at the center of our solar system. It is about 1.39 million kilometers in diameter and produces energy through nuclear fusion in its core, where hydrogen atoms fuse into helium. This process releases immense amounts of energy, which we experience as sunlight and heat. The Sun's surface temperature is around 5,500 degrees Celsius, and its activity, including sunspots and solar flares, affects space weather and Earth's environment. The Sun is currently in its main sequence stage and has been shining for approximately 4.6 billion years, with an estimated 5 billion years left before it evolves into a red giant and eventually a white dwarf.",
+    "image": "assets/image/sun.png",
+    "hero": "sun"
   },
   {
+    "id": "2",
     "name": "Mercury",
-    "description": "Mercury is the smallest planet in our solar system. It's just a little bigger than Earth's Moon. Mercury is the closest planet to the Sun, and it’s also the fastest, zipping around the Sun every 88 Earth days. Mercury's days are long; it takes 59 Earth days for Mercury to complete one full rotation, making its day nearly as long as its year.",
-    "image": "assets/image/mercury.png"
+    "leanthOfYear": "88 days",
+    "temperature": "167",
+    "gravity": "3.7 m/s²",
+    "velocity": "47 km/s",
+    "distance": "58.278 million km",
+    "description": "Mercury is the smallest and closest planet to the Sun in our solar system, with a diameter of about 4,880 kilometers. It has a rocky composition and an iron-rich core. Due to its proximity to the Sun, Mercury experiences extreme temperatures, ranging from about 430°C (800°F) during the day to -180°C (-290°F) at night. It has a thin atmosphere, primarily composed of oxygen, sodium, and hydrogen, which cannot retain heat. Mercury's surface is covered with craters from numerous impacts, similar to our Moon. It has a very short orbital period, taking just 88 Earth days to complete a trip around the Sun.",
+    "image": "assets/image/mercury.png",
+    "hero": "mercury"
   },
   {
+    "id": "3",
     "name": "Venus",
-    "description": "Venus spins slowly in the opposite direction from most planets. Its thick atmosphere traps heat in a runaway greenhouse effect, making it the hottest planet in our solar system. Venus' surface temperatures are hot enough to melt lead. Venus is similar in size to Earth and is often referred to as Earth's twin.",
-    "image": "assets/image/venus.png"
+    "leanthOfYear": "225 days",
+    "temperature": "464",
+    "gravity": "8.87 m/s²",
+    "velocity": "35 km/s",
+    "distance": "108.12 million km",
+    "description": "Venus, the second planet from the Sun, is similar in size and structure to Earth, with a diameter of about 12,104 kilometers. Often called Earth's \"sister planet,\" Venus has a thick atmosphere composed mainly of carbon dioxide, with clouds of sulfuric acid, creating a runaway greenhouse effect. This results in extremely high surface temperatures, averaging around 465°C (869°F), making Venus the hottest planet in our solar system. The surface features vast plains, volcanic mountains, and craters. Venus rotates very slowly and in the opposite direction of most planets, with one day on Venus lasting 243 Earth days. Its dense atmosphere and harsh conditions make it a challenging target for exploration.",
+    "image": "assets/image/venus.png",
+    "hero": "venus"
   },
   {
+    "id": "4",
     "name": "Earth",
-    "description": "Earth is the third planet from the Sun and the only astronomical object known to harbor life. Earth's atmosphere is 78% nitrogen, 21% oxygen, with traces of water vapor, carbon dioxide, and other gases. Earth's biosphere has significantly altered the atmosphere and other abiotic conditions on the planet.",
-    "image": "assets/image/earth.png"
+    "leanthOfYear": "365 days",
+    "temperature": "15",
+    "gravity": "9.8 m/s²",
+    "velocity": "29 km/s",
+    "distance": "151.83 million km",
+    "description": "\nEarth is the third planet from the Sun and the only known planet to support life. It has a diameter of about 12,742 kilometers and a diverse surface composed of continents and oceans. Earth’s atmosphere, rich in nitrogen and oxygen, provides the air we breathe and protects us from harmful solar radiation. The planet's climate and weather are driven by the Sun's energy, supporting a variety of ecosystems. Earth has a dynamic geology, with plate tectonics shaping its surface over millions of years. Its rotation period is 24 hours, creating a day-night cycle, and it orbits the Sun in 365.25 days, defining our year and seasons.",
+    "image": "assets/image/earth.png",
+    "hero": "earth"
   },
   {
-    "name": "Moon",
-    "description": "The Moon is Earth's only natural satellite. It is the fifth-largest satellite in the Solar System and the largest and most massive relative to its parent planet. The Moon's gravitational influence is the main driver of Earth's tides and very slowly lengthens Earth's day.",
-    "image": "assets/image/moon.png"
-  },
-  {
+    "id": "5",
     "name": "Mars",
-    "description": "Mars is a dusty, cold, desert world with a very thin atmosphere. It is home to the tallest mountain in the solar system, Olympus Mons, a shield volcano, and Valles Marineris, the largest canyon. Mars has seasons, polar ice caps, volcanoes, canyons, and weather, and there are signs of ancient floods and evidence of liquid salty water on the planet's surface.",
-    "image": "assets/image/mars.png"
+    "leanthOfYear": "687 days",
+    "temperature": "-65",
+    "gravity": "3.71 m/s²",
+    "velocity": "24 km/s",
+    "distance": "250.66 million km",
+    "description": "Mars, the fourth planet from the Sun, is often called the \"Red Planet\" due to its reddish appearance, caused by iron oxide on its surface. It has a diameter of about 6,779 kilometers and features the largest volcano and the deepest canyon in the solar system. Mars has a thin atmosphere composed mostly of carbon dioxide, with surface temperatures ranging from -125°C (-195°F) to 20°C (68°F). The planet experiences seasons, polar ice caps, and dust storms. Evidence suggests Mars once had liquid water, raising questions about its potential to support life. Mars has two small moons, Phobos and Deimos, and continues to be a major focus of exploration for its potential for future human habitation.",
+    "image": "assets/image/mars.png",
+    "hero": "mars"
   },
   {
+    "id": "6",
     "name": "Jupiter",
-    "description": "Jupiter is more than twice as massive than the other planets of our solar system combined. The giant planet's Great Red Spot is a centuries-old storm bigger than Earth. Jupiter has a strong magnetic field and dozens of moons, including the four large Galilean moons: Io, Europa, Ganymede, and Callisto.",
-    "image": "assets/image/jupiter.png"
+    "leanthOfYear": "12 years",
+    "temperature": "-110",
+    "gravity": "24.79 m/s²",
+    "velocity": "13 km/s",
+    "distance": "741.43 million km",
+    "description": "Jupiter, the fifth planet from the Sun, is the largest in our solar system, with a diameter of about 139,820 kilometers. It is a gas giant composed primarily of hydrogen and helium, lacking a solid surface. Jupiter is known for its prominent bands of clouds and the Great Red Spot, a massive storm larger than Earth that has raged for centuries. The planet has a strong magnetic field and at least 79 moons, including the four large Galilean moons: Io, Europa, Ganymede, and Callisto. Jupiter's immense size and gravitational influence play a crucial role in the dynamics of the solar system.",
+    "image": "assets/image/jupiter.png",
+    "hero": "jupiter"
   },
   {
+    "id": "7",
     "name": "Saturn",
-    "description": "Adorned with a dazzling, complex system of icy rings, Saturn is unique in our solar system. The rings are made of chunks of ice and rock, and scientists are not yet certain how they formed. Saturn has more than 80 moons, and it is home to some of the most interesting landscapes in the solar system.",
-    "image": "assets/image/saturn.png"
+    "leanthOfYear": "29 years",
+    "temperature": "-140",
+    "gravity": "10.44 m/s²",
+    "velocity": "9 km/s",
+    "distance": "1.4635 billion km",
+    "description": "Saturn, the sixth planet from the Sun, is renowned for its stunning ring system composed of ice, rock, and dust particles. It is the second-largest planet in the solar system, with a diameter of about 116,460 kilometers. Like Jupiter, Saturn is a gas giant primarily made of hydrogen and helium, with no definite solid surface. Saturn has a strong magnetic field and at least 83 moons, including Titan, the second-largest moon in the solar system, which has a thick atmosphere and lakes of liquid methane. Saturn's unique rings and diverse moon system make it a fascinating subject of study.",
+    "image": "assets/image/saturn.png",
+    "hero": "saturn",
+    "text": "Blue Planets"
   },
   {
+    "id": "8",
     "name": "Uranus",
-    "description": "Uranus is the seventh planet from the Sun, and has the third-largest planetary radius and fourth-largest planetary mass in the Solar System. Uranus is unique in that it rotates on its side, making its equator nearly perpendicular to its orbit. It is also known for its faint ring system and 27 known moons.",
-    "image": "assets/image/uranus.png"
+    "leanthOfYear": "84 years",
+    "temperature": "-195",
+    "gravity": "8.87 m/s²",
+    "velocity": "6 km/s",
+    "distance": "2.9379 billion km",
+    "description": "Uranus, the seventh planet from the Sun, is an ice giant with a diameter of about 50,724 kilometers. It is unique among the planets in our solar system for its sideways rotation axis, which causes it to essentially roll around the Sun. Uranus is primarily composed of hydrogen, helium, and ice, with an atmosphere that includes methane, giving it a blue-green hue. The planet has faint rings and 27 known moons, the largest of which are Miranda, Ariel, Umbriel, Titania, and Oberon. Uranus' extreme axial tilt and unusual characteristics make it a subject of ongoing scientific interest and exploration.",
+    "image": "assets/image/uranus.png",
+    "hero": "uranus"
   },
   {
+    "id": "9",
     "name": "Neptune",
-    "description": "Neptune is dark, cold, and whipped by supersonic winds. It was the first planet located through mathematical calculations, rather than by telescope. Neptune is known for its striking blue color, which is a result of methane in the atmosphere. It has six known rings and 14 known moons.",
-    "image": "assets/image/neptune.png"
+    "leanthOfYear": "165 years",
+    "temperature": "-200",
+    "gravity": "11.15 m/s²",
+    "velocity": "5 km/s",
+    "distance": "4.4731 billion km",
+    "description": "Neptune, the eighth and farthest planet from the Sun, is a gas giant with a diameter of about 49,244 kilometers. It is primarily composed of hydrogen, helium, and traces of methane, which give it a deep blue color. Neptune has a dynamic atmosphere with high-speed winds and large storms, including the Great Dark Spot and other smaller vortices. The planet has a faint ring system and 14 known moons, the largest of which is Triton, a captured Kuiper Belt object with geysers erupting nitrogen gas. Neptune's remote location and unique features make it a target of interest for planetary scientists seeking to understand the outer solar system.",
+    "image": "assets/image/neptune.png",
+    "hero": "neptune"
+  },
+  {
+    "id": "10",
+    "name": "Moon",
+    "lengthOfYear": "27.3 days",
+    "temperature": "-173 to 127",
+    "gravity": "1.62 m/s²",
+    "velocity": "1.022 km/s",
+    "distance": "384,400 km",
+    "description": "The Moon is Earth's only natural satellite and the fifth largest moon in the Solar System. It has a diameter of about 3,474 kilometers. The Moon has a significant impact on Earth, including its tides. Its surface is covered with craters, mountains, and plains, and it has no atmosphere or magnetic field. The Moon's gravitational influence affects Earth’s rotation and stabilizes its tilt. Human exploration of the Moon began with the Apollo missions, and it remains a subject of scientific research and exploration.",
+    "image": "assets/image/moon.png",
+    "hero": "moon"
   }
 ]

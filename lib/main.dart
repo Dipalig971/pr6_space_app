@@ -1,9 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:pr6_space_app/screen/space_app/provider/fav_provider.dart';
+import 'package:pr6_space_app/screen/space_app/provider/space_provider.dart';
 import 'package:pr6_space_app/screen/space_app/view/home/home_screen.dart';
 import 'package:pr6_space_app/screen/space_app/view/splash/splash_screen.dart';
+import 'package:provider/provider.dart';
 
 void main(){
-  runApp(const SpaceApp());
+  runApp(MultiProvider(providers: [
+    ChangeNotifierProvider(create: (context) => SpaceProvider(),),
+    ChangeNotifierProvider(create: (context) => FavoriteProvider(),),
+  ],
+  builder: (context, child) => const SpaceApp()));
 }
 
 class SpaceApp extends StatelessWidget {
