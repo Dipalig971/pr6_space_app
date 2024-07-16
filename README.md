@@ -1,4 +1,4 @@
-#PR6 Animated Space Application
+# PR6 Animated Space Application
 
 ## Overview
 
