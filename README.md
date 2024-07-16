@@ -1,16 +1,20 @@
-# pr6_space_app
+#PR6 Animated Space Application
 
-A new Flutter project.
+## Overview
 
-## Getting Started
+Space Explorer is an interactive mobile application designed for space enthusiasts. The app offers a rich experience of the cosmos through engaging animations, detailed celestial data, and personalized user features. Whether you are an amateur astronomer or a curious mind, Space Explorer brings the wonders of space right to your fingertips.
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+- **Interactive Animations:** Enjoy smooth and captivating animations of planets, stars, galaxies, and other celestial objects.
+- **Informative Content:** Learn about various space phenomena with detailed descriptions and facts.
+- **User-Friendly Interface:** Navigate easily through different sections and explore space at your own pace.
+- **Responsive Design:** Optimized for both mobile and tablet devices.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+   ## Video
+   https://github.com/user-attachments/assets/3175d3de-0e56-4a83-807d-20bfaacd436a
+
+
+
+
