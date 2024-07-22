@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'dart:ui'; // Required for BackdropFilter
-
+import 'dart:ui';
 import 'package:pr6_space_app/screen/space_app/modal/space_modal.dart';
 import 'package:pr6_space_app/screen/space_app/provider/fav_provider.dart';
 import 'package:pr6_space_app/screen/space_app/provider/space_provider.dart';
@@ -30,7 +29,7 @@ class _DetailScreenState extends State<DetailScreen>
 
     FavoriteProvider likeProvider =
         Provider.of<FavoriteProvider>(context, listen: false);
-    isLiked = likeProvider.favoritePlanets.contains(widget.space.name);
+    isLiked = likeProvider.favPlanet.contains(widget.space.name);
   }
 
   @override
@@ -154,7 +153,7 @@ class _DetailScreenState extends State<DetailScreen>
                                       });
                                       Provider.of<FavoriteProvider>(context,
                                               listen: false)
-                                          .addFavoritePlanet(widget.space.name);
+                                          .addFavPlanet(widget.space.name);
                                     },
                                     icon: Icon(
                                       isLiked

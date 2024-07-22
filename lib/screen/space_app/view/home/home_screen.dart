@@ -22,7 +22,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   @override
   void initState() {
     super.initState();
-    animationController = AnimationController(vsync: this, duration: const Duration(milliseconds: 5000))
+    animationController = AnimationController(
+        vsync: this, duration: const Duration(milliseconds: 5000))
       ..repeat();
   }
 
@@ -106,7 +107,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 Padding(
                   padding: const EdgeInsets.only(top: 10),
                   child: GridView.builder(
-                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    gridDelegate:
+                    const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
                       childAspectRatio: 1 / 1.2,
                       crossAxisSpacing: 16.0,
@@ -121,77 +123,78 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                             builder: (context) => DetailScreen(space: space),
                           ));
                         },
-                        child: Hero(
-                          tag: space.hero,
-                          child: Stack(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(top: 50, left: 20),
-                                child: Container(
-                                  margin: const EdgeInsets.only(top: 20),
-                                  height: 230,
-                                  width: 200,
-                                  decoration: BoxDecoration(
-                                    color: const Color(0xff323232),
-                                    borderRadius: BorderRadius.circular(15),
-                                  ),
-                                  child: Column(
-                                    children: [
-                                      const SizedBox(
-                                        height: 80,
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.only(right: 20),
-                                        child: Text(
-                                          space.name,
-                                          style: const TextStyle(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 25,
-                                          ),
+                        child: Stack(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(top: 50, left: 20),
+                              child: Container(
+                                margin: const EdgeInsets.only(top: 20),
+                                height: 230,
+                                width: 200,
+                                decoration: BoxDecoration(
+                                  color: const Color(0xff323232),
+                                  borderRadius: BorderRadius.circular(15),
+                                ),
+                                child: Column(
+                                  children: [
+                                    const SizedBox(
+                                      height: 80,
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(right: 20),
+                                      child: Text(
+                                        space.name,
+                                        style: const TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 25,
                                         ),
+                                        maxLines: 1,
+                                        overflow: TextOverflow.ellipsis,
                                       ),
-                                      Padding(
-                                        padding: const EdgeInsets.only(right: 10),
-                                        child: Text(
-                                          'Velocity: ${space.velocity}',
-                                          style: const TextStyle(
-                                              color: Colors.white,
-                                              fontSize: 14,
-                                              fontWeight: FontWeight.bold
-                                          ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(right: 10, top: 20),
+                                      child: Text(
+                                        'Velocity: ${space.velocity}',
+                                        style: const TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.bold,
                                         ),
+                                        maxLines: 1,
+                                        overflow: TextOverflow.ellipsis,
                                       ),
-                                    ],
-                                  ),
+                                    ),
+                                  ],
                                 ),
                               ),
-                              AnimatedBuilder(
-                                animation: animationController,
-                                builder: (context, child) {
-                                  return RotationTransition(
-                                    turns: animationController,
-                                    child: child,
-                                  );
-                                },
-                                child: Positioned(
-                                  left: 20,
-                                  bottom: 90,
-                                  child: Container(
-                                    height: 120,
-                                    width: 200,
-                                    decoration: BoxDecoration(
-                                      shape: BoxShape.circle,
-                                      image: DecorationImage(
-                                        image: AssetImage(space.image),
-                                        fit: BoxFit.cover,
-                                      ),
+                            ),
+                            AnimatedBuilder(
+                              animation: animationController,
+                              builder: (context, child) {
+                                return RotationTransition(
+                                  turns: animationController,
+                                  child: child,
+                                );
+                              },
+                              child: Positioned(
+                                left: 20,
+                                bottom: 90,
+                                child: Container(
+                                  height: 120,
+                                  width: 200,
+                                  decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    image: DecorationImage(
+                                      image: AssetImage(space.image),
+                                      fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),
                               ),
-                            ],
-                          ),
+                            ),
+                          ],
                         ),
                       );
                     },

@@ -9,5 +9,4 @@ class SpaceProvider with ChangeNotifier {
   jsonData = data.map((item) => SpaceModal.fromJson(item)).toList();
   notifyListeners();
  }
-
 }

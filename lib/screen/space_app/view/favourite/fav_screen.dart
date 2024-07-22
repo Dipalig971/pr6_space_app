@@ -36,7 +36,7 @@ class _LikeScreenState extends State<FavoritesScreen> {
       body: Consumer<FavoriteProvider>(
         builder: (context, likeProvider, child) {
           List<SpaceModal> likedPlanets = allPlanets
-              .where((planet) => likeProvider.favoritePlanets.contains(planet.name))
+              .where((planet) => likeProvider.favPlanet.contains(planet.name))
               .toList();
 
           return Stack(
@@ -86,7 +86,7 @@ class _LikeScreenState extends State<FavoritesScreen> {
                     trailing: IconButton(
                       onPressed: () {
                         Provider.of<FavoriteProvider>(context, listen: false)
-                            .removeFavoritePlanet(space.name);
+                            .removeFavPlanet(space.name);
                       },
                       icon: const Icon(CupertinoIcons.delete_solid, color: Colors.white),
                     ),

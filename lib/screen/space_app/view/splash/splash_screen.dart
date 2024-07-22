@@ -33,7 +33,7 @@ class SplashScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Padding(
-                padding: EdgeInsets.only(top: 650,left: 20),
+                padding: EdgeInsets.only(top: 500,left: 20),
                 child: Text(
                   'EXPLORE',
                   style: TextStyle(color: Colors.white, fontSize: 60),
