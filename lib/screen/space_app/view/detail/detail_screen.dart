@@ -41,7 +41,6 @@ class _DetailScreenState extends State<DetailScreen>
   @override
   Widget build(BuildContext context) {
     SpaceProvider spaceProvider = Provider.of<SpaceProvider>(context);
-
     return Hero(
       tag: widget.space.hero,
       child: Scaffold(
@@ -133,150 +132,153 @@ class _DetailScreenState extends State<DetailScreen>
                         ),
                         child: Padding(
                           padding: const EdgeInsets.all(16.0),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Row(
-                                children: [
-                                  Text(
-                                    "Year : ${widget.space.lengthOfYear}",
-                                    style: const TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 20,
-                                        fontWeight: FontWeight.bold),
-                                  ),
-                                  const Spacer(),
-                                  IconButton(
-                                    onPressed: () {
-                                      setState(() {
-                                        isLiked = !isLiked;
-                                      });
-                                      Provider.of<FavoriteProvider>(context,
-                                              listen: false)
-                                          .addFavPlanet(widget.space.name);
-                                    },
-                                    icon: Icon(
-                                      isLiked
-                                          ? CupertinoIcons.heart_fill
-                                          : CupertinoIcons.heart,
-                                      color:
-                                          isLiked ? Colors.red : Colors.white,
-                                      size: 30,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              const SizedBox(
-                                height: 20,
-                              ),
-                              Text(
-                                "Distance : ${widget.space.distance}",
-                                style: const TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                              const SizedBox(
-                                height: 20,
-                              ),
-                              Text(
-                                "Velocity : ${widget.space.velocity}",
-                                style: const TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                              const SizedBox(
-                                height: 20,
-                              ),
-                              Text(
-                                "Gravity : ${widget.space.gravity}",
-                                style: const TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                              const SizedBox(
-                                height: 20,
-                              ),
-                              const Row(
-                                children: [
-                                  Text(
-                                    'About',
-                                    style: TextStyle(
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white,
-                                    ),
-                                  ),
-                                  Spacer(),
-                                ],
-                              ),
-                              const SizedBox(height: 10),
-                              Text(
-                                widget.space.description,
-                                style: const TextStyle(
-                                  fontSize: 16,
-                                  color: Colors.white,
-                                ),
-                              ),
-                              Container(
-                                padding: const EdgeInsets.all(16),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
+                          child: SingleChildScrollView(
+
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
                                   children: [
-                                    Row(
-                                      children: [
-                                        const Text(
-                                          'Video',
-                                          style: TextStyle(
-                                              fontSize: 20,
-                                              fontWeight: FontWeight.bold,
-                                              color: Colors.white),
-                                        ),
-                                        const Spacer(),
-                                        TextButton(
-                                          onPressed: () {
-                                            // See more action
-                                          },
-                                          child: const Text('See more'),
-                                        ),
-                                      ],
+                                    Text(
+                                      "Year : ${widget.space.lengthOfYear}",
+                                      style: const TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.bold),
                                     ),
-                                    const SizedBox(height: 10),
-                                    Row(
-                                      children: [
-                                        Expanded(
-                                          child: Container(
-                                            height: 100,
-                                            decoration: BoxDecoration(
-                                                color: Colors.grey.shade300,
-                                                image: DecorationImage(
-                                                    image: AssetImage(
-                                                        widget.space.image))),
-                                            child: const Icon(Icons.play_arrow,
-                                                size: 50),
-                                          ),
-                                        ),
-                                        const SizedBox(width: 10),
-                                        Expanded(
-                                          child: Container(
-                                            height: 100,
-                                            decoration: BoxDecoration(
-                                                color: Colors.grey.shade300,
-                                                image: DecorationImage(
-                                                    image: AssetImage(
-                                                        widget.space.image))),
-                                            child: const Icon(Icons.play_arrow,
-                                                size: 50),
-                                          ),
-                                        ),
-                                      ],
+                                    const Spacer(),
+                                    IconButton(
+                                      onPressed: () {
+                                        setState(() {
+                                          isLiked = !isLiked;
+                                        });
+                                        Provider.of<FavoriteProvider>(context,
+                                                listen: false)
+                                            .addFavPlanet(widget.space.name);
+                                      },
+                                      icon: Icon(
+                                        isLiked
+                                            ? CupertinoIcons.heart_fill
+                                            : CupertinoIcons.heart,
+                                        color:
+                                            isLiked ? Colors.red : Colors.white,
+                                        size: 30,
+                                      ),
                                     ),
                                   ],
                                 ),
-                              ),
-                            ],
+                                const SizedBox(
+                                  height: 20,
+                                ),
+                                Text(
+                                  "Distance : ${widget.space.distance}",
+                                  style: const TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                const SizedBox(
+                                  height: 20,
+                                ),
+                                Text(
+                                  "Velocity : ${widget.space.velocity}",
+                                  style: const TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                const SizedBox(
+                                  height: 20,
+                                ),
+                                Text(
+                                  "Gravity : ${widget.space.gravity}",
+                                  style: const TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                const SizedBox(
+                                  height: 20,
+                                ),
+                                const Row(
+                                  children: [
+                                    Text(
+                                      'About',
+                                      style: TextStyle(
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                    Spacer(),
+                                  ],
+                                ),
+                                const SizedBox(height: 10),
+                                Text(
+                                  widget.space.description,
+                                  style: const TextStyle(
+                                    fontSize: 16,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                Container(
+                                  padding: const EdgeInsets.all(16),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Row(
+                                        children: [
+                                          const Text(
+                                            'Video',
+                                            style: TextStyle(
+                                                fontSize: 20,
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.white),
+                                          ),
+                                          const Spacer(),
+                                          TextButton(
+                                            onPressed: () {
+                                              // See more action
+                                            },
+                                            child: const Text('See more'),
+                                          ),
+                                        ],
+                                      ),
+                                      const SizedBox(height: 10),
+                                      Row(
+                                        children: [
+                                          Expanded(
+                                            child: Container(
+                                              height: 100,
+                                              decoration: BoxDecoration(
+                                                  color: Colors.grey.shade300,
+                                                  image: DecorationImage(
+                                                      image: AssetImage(
+                                                          widget.space.image))),
+                                              child: const Icon(Icons.play_arrow,
+                                                  size: 50),
+                                            ),
+                                          ),
+                                          const SizedBox(width: 10),
+                                          Expanded(
+                                            child: Container(
+                                              height: 100,
+                                              decoration: BoxDecoration(
+                                                  color: Colors.grey.shade300,
+                                                  image: DecorationImage(
+                                                      image: AssetImage(
+                                                          widget.space.image))),
+                                              child: const Icon(Icons.play_arrow,
+                                                  size: 50),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ),

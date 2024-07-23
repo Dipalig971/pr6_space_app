@@ -1,59 +1,74 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 
-class SplashScreen extends StatelessWidget {
+class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    Timer(const Duration(seconds: 5), () {
+  _SplashScreenState createState() => _SplashScreenState();
+}
+
+class _SplashScreenState extends State<SplashScreen> {
+  @override
+  void initState() {
+    super.initState();
+    // Start a timer to navigate to home screen after 3 seconds
+    Timer(const Duration(seconds: 3), () {
       Navigator.of(context).pushReplacementNamed('/home');
     });
+  }
+
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
         children: [
-          Container(
-            height: MediaQuery.of(context).size.height,
-            width: MediaQuery.of(context).size.width,
-            decoration: const BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('assets/image/solar.jpg'),
-                fit: BoxFit.cover,
-              ),
+          // Background image
+          Positioned.fill(
+            child: Image.asset(
+              'assets/image/solar.jpg',
+              fit: BoxFit.cover,
             ),
           ),
-          Container(
-            height: MediaQuery.of(context).size.height,
-            width: MediaQuery.of(context).size.width,
-            color: Colors.black.withOpacity(0.5), // Adjust the opacity value as needed
+          // Semi-transparent overlay
+          Positioned.fill(
+            child: Container(
+              color: Colors.black.withOpacity(0.5),
+            ),
           ),
-          const Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Padding(
-                padding: EdgeInsets.only(top: 500,left: 20),
-                child: Text(
-                  'EXPLORE',
-                  style: TextStyle(color: Colors.white, fontSize: 60),
+          // Centered text
+          const Center(
+            child: Column(
+              children: [
+                Padding(
+                  padding: EdgeInsets.only(left: 20,top: 650,right: 90),
+                  child: Text(
+                    'EXPLORE',
+                    style: TextStyle(color: Colors.white, fontSize: 60),
+                  ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(right: 70  ),
-                child: Text(
-                  'SOLAR',
-                  style: TextStyle(color: Colors.white, fontSize: 50, fontWeight: FontWeight.bold),
+                Padding(
+                  padding: EdgeInsets.only(right: 160),
+                  child: Text(
+                    'SOLAR',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 50,
+                        fontWeight: FontWeight.bold),
+                  ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(right: 30),
-                child: Text(
-                  'SYSTEM',
-                  style: TextStyle(color: Colors.white, fontSize: 50, fontWeight: FontWeight.bold),
+                Padding(
+                  padding: EdgeInsets.only(right: 120),
+                  child: Text(
+                    'SYSTEM',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 50,
+                        fontWeight: FontWeight.bold),
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ],
       ),

@@ -20,6 +20,7 @@ class SpaceApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      initialRoute: '/',
       routes: {
         '/':(context) => const SplashScreen(),
         '/home':(context) => const HomeScreen(),

@@ -7,6 +7,6 @@ class SpaceProvider with ChangeNotifier {
 
  Future<void> convert(List<dynamic> data) async {
   jsonData = data.map((item) => SpaceModal.fromJson(item)).toList();
-  notifyListeners();
+  // notifyListeners();
  }
 }
