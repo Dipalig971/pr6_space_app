@@ -13,7 +13,7 @@ Space Explorer is an interactive mobile application designed for space enthusias
 
 
    ## Video
-   https://github.com/user-attachments/assets/3175d3de-0e56-4a83-807d-20bfaacd436a
+ 
 
 
 
